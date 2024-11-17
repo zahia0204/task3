@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Social links profile</title>
+  <style>
+    :root{
+--Green: hsl(75, 94%, 57%);
+--White: hsl(0, 0%, 100%);
+--Grey-700: hsl(0, 0%, 20%);
+--Grey-800: hsl(0, 0%, 12%);
+--Grey-900: hsl(0, 0%, 8%);
+    }
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+body{
+    background-color: var(--Grey-900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+.container{
+    background-color: var(--Grey-800);
+    padding: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center; 
+}
+.container img{
+    border-radius: 100%;
+    width: 100px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px; 
+}
+.container .links a{
+    text-decoration: none;
+    color: var(--White);
+    width: 300px;
+    height: 40px;
+    font-weight: bold;
+    margin: .5em;
+    border-radius: 5px;
+    background-color: var(--Grey-700);
+    display: flex;
+    align-items: center;
+    justify-content: center;  }
+    .container .links a:hover{
+      background-color: var(--Green);
+      color: var(--Grey-900);
+    }
+    .desc {
+      margin: .5em;
+      color: var(--White);
+    }
+    .location{
+      color: var(--Green);
+    }
+    .name{
+      color: var(--White);
+      margin-bottom: 0.5em;
+    }
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <img src="assets/images/avatar-jessica.jpeg" alt="jess">
+  <h2 class="name"> Jessica Randall</h2>
+  <p class="location">London, United Kingdom</p>
+  <p class="desc"> "Front-end developer and avid reader."</p>
+  <div class="links">
+  <a href="#"> GitHub</a>
+  <a href="#">Frontend Mentor</a>
+  <a href="#"> LinkedIn</a>
+  <a href="#"> Twitter</a>
+  <a href="#"> Instagram</a>
+</div>
+  </div>
+</body>
+</html>
